@@ -1,0 +1,84 @@
+.hero_section {
+    padding: 9rem 0 3rem;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    width: 87%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero_data {
+    padding: 3rem 3rem 2rem;
+    position: relative;
+}
+
+.hero_title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: var(--blue);
+}
+
+.hero_name {
+    font-size: clamp(2.85rem,8vw,5rem);
+    color: var(--titles-color);
+    line-height: 1.1;
+    margin-bottom: .5rem;
+    font-family: var(--font-inter);
+    display: inline-block;
+    position: relative;
+}
+
+.hero_subtitle {
+    font-size: clamp(1.8rem,4vw,2.5rem);
+    margin-bottom: 2.5rem;
+    font-family: var(--font-inter);
+    line-height: 1.1;
+}
+
+.hero_description {
+    max-width: 30rem;
+    font-size: 1.05rem;
+    font-family: var(--font-inter);
+}
+
+.container_data {
+    width: 70%;
+}
+
+.container_foto {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.foto {
+    width:20rem;
+    border-radius: 50%;
+    background: var(--bg-body-dark);
+    aspect-ratio: 1/1;
+    animation: spin 2s linear infinite;
+    border: 10px solid var(--blue);
+
+}
+
+
+@media (max-width: 890px) {
+    .container_data {
+        width: 100%;
+    }
+    
+    .container_foto {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+}
