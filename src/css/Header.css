@@ -19,7 +19,7 @@
 
 .nav_container {
   max-width: 1200px;
-  width: 87%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -241,6 +241,5 @@
 .languages_list li img {
   height: .85rem;
 }
-
 
 

@@ -5,7 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import MxFlag from "../assets/images/mx-flag.svg";
 import UsFlag from "../assets/images/us-flag.svg";
 import { useEffect, useRef, useState } from "react";
-import '../css/Header.css'
+import '../css/header.css'
 
 function Header() {
   const [menu, setMenu] = useState(false)
