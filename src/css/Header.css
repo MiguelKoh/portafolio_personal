@@ -242,4 +242,53 @@
   height: .85rem;
 }
 
+.logo_link {
+   margin-top: 1rem; 
+  transition: margin .4s ease-out;
+}
+
+.logo_img{
+  width: 2.5rem;
+  height: auto;
+}
+
+.header_section.header_scrolling {
+  background-color: var(--bg-body);
+  border-bottom: 1px solid var(--purple);
+  padding-top: 0
+}
+
+.header_section.header_scrolling .logo_link {
+  margin-top: 0.35rem
+}
+
+.header_section.header_scrolling .logo_img {
+  width: 2rem;
+  height: auto;
+}
+
+.header_section.header_scrolling .nav {
+  padding: 1.5rem 3.5rem;
+  background: none
+}
+
+
+@media (max-width: 890px) {
+    .header_section .logo_link {
+      margin-top:0
+  }
+  
+  .header_section.header_scrolling {
+      padding: .75rem 0
+  }
+  
+  .header_section.header_scrolling .logo_img {
+      width:2rem;
+      height:auto;
+  }
+  
+  .header_section.header_scrolling .nav {
+      padding: 0
+  }
+}
 

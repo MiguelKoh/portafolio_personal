@@ -6,7 +6,7 @@ function SocialLink({ link, icon=null, arialabel }) {
       className="social_link"
       href={link}
       target="_blank"
-      aria-label={`link to my ${{ arialabel }} profile`}
+      aria-label={`link to my ${ arialabel } profile`}
     >
       {icon} 
     </a>

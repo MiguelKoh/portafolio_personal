@@ -5,11 +5,14 @@ import { IoMdClose } from "react-icons/io";
 import MxFlag from "../assets/images/mx-flag.svg";
 import UsFlag from "../assets/images/us-flag.svg";
 import { useEffect, useRef, useState } from "react";
+import logo from "../assets/images/logo_ME.png"
 import '../css/header.css'
+
 
 function Header() {
   const [menu, setMenu] = useState(false)
   const [isOpen, setIsOpen] = useState(false);
+  const [headerScroll, setHeaderScroll] = useState(false)
   
   const btnRef = useRef();
   
@@ -24,16 +27,39 @@ function Header() {
     document.addEventListener("click", handleClickOutside)
   
     return () => {
-      document.removeEventListener("click",handleClickOutside )
+      document.removeEventListener("click",handleClickOutside)
+    }
+  }, [])
+  
+  useEffect(() => {
+     const handleScrolling = ()=> {
+      const limitHeightScrolling = 10;
+      const heightScrolling = document.documentElement.scrollTop;
+      
+      if(heightScrolling > limitHeightScrolling){
+        setHeaderScroll(true)
+      }
+      else{
+        setHeaderScroll(false)
+      }
+     }
+    document.addEventListener("scroll", handleScrolling)
+  
+    return () => {
+      document.removeEventListener("scroll", handleScrolling)
     }
   }, [])
   
 
 
+
+
   return (
-    <header className="header_section">
+    <header className={`header_section ${headerScroll ?"header_scrolling":""}`}>
       <nav className="nav_content nav_container">
-        <a href="/">Portafolio</a>
+        <a href="/" className="logo_link">
+          <img src={logo} alt="logo" className="logo_img" />
+        </a>
         <div className="nav">
           <ol className= {`nav_list ${menu ? "open_menu":""}`}>
             

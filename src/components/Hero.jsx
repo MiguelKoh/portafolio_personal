@@ -3,6 +3,7 @@ import imagen from '../assets/images/foto.png'
 import SocialLink from './SocialLink';
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
+import { ImWhatsapp } from "react-icons/im";
 
 function Hero() {
   return (
@@ -27,6 +28,7 @@ function Hero() {
           <div className="social_links">
             <SocialLink link={"https://github.com/"} arialabel={"Github"} icon={<FiGithub/>}/>
             <SocialLink link={"https://www.linkedin.com/"} arialabel={"Linkedin"} icon={<SlSocialLinkedin/>}/>
+            <SocialLink link={"https://wa.me/529994090432"} arialabel={"Whatsapp"} icon={<ImWhatsapp/>}/> 
           </div>
         </div>
         <div className="top_left_edges"></div>
