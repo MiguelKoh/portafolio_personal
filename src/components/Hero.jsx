@@ -1,9 +1,13 @@
 import '../css/hero.css'
-import imagen from '../assets/images/foto.png'
+import man from '../assets/images/man_opt.png'
 import SocialLink from './SocialLink';
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { ImWhatsapp } from "react-icons/im";
+import energy from "../assets/images/energia2.png"
+import logo2 from "../assets/images/v0.png"
+import logo from "../assets/images/logo_ME_wider_with_tags_visible.png"
+import { MdAlternateEmail } from "react-icons/md";
 
 function Hero() {
   return (
@@ -21,14 +25,19 @@ function Hero() {
           </p>
         </div>
         <div className="container_foto">
-          <img src={imagen} className="foto" alt="foto" />
+          <div className="container_img">
+            <img src={man} className="man" alt="man" />
+            <img src={energy} className="energy" alt="man" />
+            <img src={logo2} className="white_halo" alt="logo2" />
+          </div>
         </div>
         <div className="hero_links">
             <a href="" className='btn_primary'>Conoce más</a>
           <div className="social_links">
             <SocialLink link={"https://github.com/"} arialabel={"Github"} icon={<FiGithub/>}/>
             <SocialLink link={"https://www.linkedin.com/"} arialabel={"Linkedin"} icon={<SlSocialLinkedin/>}/>
-            <SocialLink link={"https://wa.me/529994090432"} arialabel={"Whatsapp"} icon={<ImWhatsapp/>}/> 
+            <SocialLink link={"https://wa.me/529994090432"} arialabel={"Whatsapp"} icon={<ImWhatsapp/>}/>
+            <SocialLink link={"mailto:miguelkohavila@gmail.com"} arialabel={"correo"} icon={<MdAlternateEmail/>}/> 
           </div>
         </div>
         <div className="top_left_edges"></div>

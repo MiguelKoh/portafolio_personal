@@ -5,7 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import MxFlag from "../assets/images/mx-flag.svg";
 import UsFlag from "../assets/images/us-flag.svg";
 import { useEffect, useRef, useState } from "react";
-import logo from "../assets/images/logo_ME.png"
+import logo from "../assets/images/logo_opt.png"
 import '../css/header.css'
 
 
