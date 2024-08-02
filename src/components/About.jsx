@@ -9,6 +9,7 @@ import tailwindImage from '../assets/images/tecnologias/tailwind.png'
 import "@splidejs/splide/dist/css/splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import { display } from "@splidejs/splide/src/js/utils"
 
 function About() {
   
@@ -16,8 +17,8 @@ function About() {
     {imagen:reactImage, alt:"Image react"},
     {imagen:bootstrapImage, alt:"image bootstrap"},
     {imagen:firebaseImage, alt:"image firebase"},
-    {imagen:gitImage, alt:"image git"},
-    {imagen:githubImage, alt:"image github"},
+    // {imagen:gitImage, alt:"image git"},
+    // {imagen:githubImage, alt:"image github"},
     {imagen:tailwindImage, alt:"image tailwind"}
   ]
 
@@ -32,22 +33,27 @@ function About() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nihil maiores quae minima dolorum enim iste nisi ullam eveniet excepturi. Blanditiis, id! Eligendi cum eius, voluptas inventore ratione exercitationem placeat!.</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicingu.</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
-            <div className="abilities">
+        </div>
+        <div className='about_photo'>
+          <img src={foto} className="photo" alt="foto-de-perfil" />
+          </div>
+      </div>
+      <div className="container_abilities">
+      <div className="technologies">
               <ul>
                 <li>React js</li>
                 <li>Bootstrap</li>
                 <li>Tailwind css</li>
               </ul>
               <ul>
-                <li>Codeigniter 4 (intermedio)</li>
+                <li>Codeigniter 4</li>
                 <li>Firebase</li>
                 <li>Wordpress</li>
               </ul>
               </div>
-        </div>
-        <div className='about_photo'>
-          <img src={foto} className="photo" alt="foto-de-perfil" />
-           <div className="slider_container">
+      
+      <div className="container_carousel">
+      <div className="slider_container">
            <Splide
                 aria-label="Skills List"
                 options={{
@@ -79,8 +85,7 @@ function About() {
                 
               </Splide>
            </div>
-          
-          </div>
+           </div>
       </div>
       </div>
     </section>
