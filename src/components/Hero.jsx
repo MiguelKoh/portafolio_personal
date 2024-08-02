@@ -32,7 +32,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero_links">
-            <a href="" className='btn_primary'>Conoce más</a>
+            <a href="#about" className='btn_primary'>Conoce más</a>
           <div className="social_links">
             <SocialLink link={"https://github.com/"} arialabel={"Github"} icon={<FiGithub/>}/>
             <SocialLink link={"https://www.linkedin.com/"} arialabel={"Linkedin"} icon={<SlSocialLinkedin/>}/>

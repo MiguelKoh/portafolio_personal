@@ -70,6 +70,9 @@ function Header() {
               <a className="nav_link">Proyectos</a>
             </li>
             <li className="nav_item">
+              <a className="nav_link">Experiencia</a>
+            </li>
+            <li className="nav_item">
               <a className="nav_link">Contacto</a>
             </li>
           </ol>

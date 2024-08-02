@@ -72,7 +72,7 @@
 }
 
 
-.foto {
+/* .foto {
     width:18rem;
     height: fit-content;
     border-radius: 50%;
@@ -81,7 +81,7 @@
     border: 0.5rem solid var(--blue);
     object-fit: cover; 
     
-}
+} */
 
 .man {
     width: 100%;
