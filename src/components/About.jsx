@@ -6,9 +6,20 @@ import firebaseImage from '../assets/images/tecnologias/firebase.png'
 import gitImage from '../assets/images/tecnologias/git.png'
 import githubImage from '../assets/images/tecnologias/github.png'
 import tailwindImage from '../assets/images/tecnologias/tailwind.png'
-
+import "@splidejs/splide/dist/css/splide.min.css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 function About() {
+  
+  const SlidesImages = [
+    {imagen:reactImage, alt:"Image react"},
+    {imagen:bootstrapImage, alt:"image bootstrap"},
+    {imagen:firebaseImage, alt:"image firebase"},
+    {imagen:gitImage, alt:"image git"},
+    {imagen:githubImage, alt:"image github"},
+    {imagen:tailwindImage, alt:"image tailwind"}
+  ]
 
   return (
     <section className='about_section' id='about'>
@@ -36,7 +47,38 @@ function About() {
         </div>
         <div className='about_photo'>
           <img src={foto} className="photo" alt="foto-de-perfil" />
-           <div>prueba</div>
+           <div className="slider_container">
+           <Splide
+                aria-label="Skills List"
+                options={{
+                  type: "loop",
+                  gap: "1.5rem",
+                  drag: "free",
+                  arrows: false,
+                  pagination: false,
+                  autoWidth: true,
+                  autoHeight: true,
+                  autoScroll: {
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                    rewind: false,
+                    speed: 0.65,
+                  },
+                }}
+                extensions={{ AutoScroll }}
+              >
+                  
+                  {
+                    SlidesImages.map((item,index)=>{
+                      return (
+                        <SplideSlide key={index}>
+                        <img src={item.imagen} alt={item.alt} className="slides_images"/>
+                        </SplideSlide>)
+                    })
+                  }
+                
+              </Splide>
+           </div>
           
           </div>
       </div>
