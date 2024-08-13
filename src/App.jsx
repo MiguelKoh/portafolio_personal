@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import About from "./components/About";
+import ButtonTop from "./components/ButtonTop";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <ButtonTop/>
         <About/>
       </main>
     </>

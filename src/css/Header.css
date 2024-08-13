@@ -253,8 +253,7 @@
 }
 
 .header_section.header_scrolling {
-  background-color: var(--bg-body);
-  border-bottom: 1px solid var(--purple);
+  background-color: var(--bg-body-dark);
   padding-top: 0
 }
 
