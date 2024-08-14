@@ -1,25 +1,25 @@
 import foto from "../assets/images/foto.png"
 import '../css/about.css'
-import reactImage from '../assets/images/tecnologias/react.png'
-import bootstrapImage from '../assets/images/tecnologias/bootstrap.png'
-import firebaseImage from '../assets/images/tecnologias/firebase.png'
-import gitImage from '../assets/images/tecnologias/git.png'
-import githubImage from '../assets/images/tecnologias/github.png'
-import tailwindImage from '../assets/images/tecnologias/tailwind.png'
 import "@splidejs/splide/dist/css/splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { display } from "@splidejs/splide/src/js/utils"
+import iconReact from "../assets/images/frameworks/iconReact.png"
+import iconBootrastrap from "../assets/images/frameworks/iconBootstrap.png"
+import iconFirebase from "../assets/images/frameworks/iconFirebase.png"
+import iconGit from "../assets/images/frameworks/iconGit.png"
+import iconTailwind from "../assets/images/frameworks/iconTailwind.png"
+import iconoJavascript from "../assets/images/frameworks/iconJavascript.png"
 
 function About() {
   
   const SlidesImages = [
-    {imagen:reactImage, alt:"Image react"},
-    {imagen:bootstrapImage, alt:"image bootstrap"},
-    {imagen:firebaseImage, alt:"image firebase"},
-    // {imagen:gitImage, alt:"image git"},
-    // {imagen:githubImage, alt:"image github"},
-    {imagen:tailwindImage, alt:"image tailwind"}
+    {src:iconReact, alt:"icono React" },
+    {src:iconBootrastrap, alt:"icono bootstrap"},
+    {src: iconFirebase, alt:"icono firebase"},
+    {src:iconGit, alt:"icono git" },
+    {src:iconoJavascript, alt:"icono javascript"},
+    {src:iconTailwind, alt:"icono tailwind"}
   ]
 
   return (
@@ -58,7 +58,7 @@ function About() {
                 aria-label="Skills List"
                 options={{
                   type: "loop",
-                  gap: "1.5rem",
+                  gap: "2rem",
                   drag: "free",
                   arrows: false,
                   pagination: false,
@@ -75,10 +75,11 @@ function About() {
               >
                   
                   {
-                    SlidesImages.map((item,index)=>{
+                    SlidesImages.map((imagen,index)=>{
                       return (
                         <SplideSlide key={index}>
-                        <img src={item.imagen} alt={item.alt} className="slides_images"/>
+                        <img src={imagen.src} alt={imagen.alt} className="slides_images" />
+                        
                         </SplideSlide>)
                     })
                   }

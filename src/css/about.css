@@ -105,10 +105,9 @@
 
 .technologies ul li:before {
     content: "▶";
-    left: 0px;
     color: var(--blue);
     font-size:0.6rem;
-    line-height: 12px;
+    margin-top: 2px;
 }
 .slider_container {
     width: 26vw;
@@ -127,15 +126,19 @@
 
 
 .slides_images {
-    width: 3.5rem;
+    width: 2.5rem;
 }
 
 .splide__slide  {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: var(--bg-body);
+    border-radius: 0.75rem;
+    width: 3.5rem;
     aspect-ratio: 1/1;
     object-fit: contain;
-}
+} 
 
 .container_abilities {
     display:flex;
@@ -148,6 +151,11 @@
     width: 50%;
     display: flex;
     justify-content: center;
+}
+
+.svg_width {
+    font-size: 2rem;
+    color: var(--white);
 }
 
 @media (max-width: 890px) {
