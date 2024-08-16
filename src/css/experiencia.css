@@ -1,3 +1,96 @@
 .experience_section {
     padding: 6.5rem 0;
 }
+
+.section_title {
+    font-size: clamp(1.75rem, 4vw, 2rem);
+    padding-left: 5rem;
+    color: var(--titles-color);
+    font-family: var(--font-inter);
+    font-weight: 600;
+    letter-spacing: .35px;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+.section_title:before {
+    content: "0" attr(data-number) ".";
+    margin-right: .5rem;
+    font-family: var(--font-mono);
+    font-weight: 400;
+    color: var(--blue);
+    font-size: 1.4rem;
+}
+
+.container_jobs {
+ width: 100%;
+ /* background-color: white; */
+ margin-left: 5rem;
+ display: flex;
+ justify-content:flex-start;
+ margin-top: 2rem;
+}
+
+.jobs_table {
+    width: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.workplaces {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.workplaces button {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    cursor: pointer;
+    padding: 0px 20px 2px;
+    background-color: transparent;
+    color: var(--gray);
+    border: none;
+}
+
+.workplaces button:hover {
+    background-color: #233554;
+    transition: background-color .5s ease;
+}
+
+.jobs_activities {
+    width: 65%;
+    border-color: blue;
+}
+
+.range {
+    font-size: 1rem;
+}
+
+.job_title {
+    font-size: 1.5rem;
+}
+
+.jobs_activities ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-mono);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.jobs_activities ul li:nth-child(1){
+    margin-top: 1rem;
+}
+
+.jobs_activities ul li:before {
+    content: "▶";
+    color: var(--blue);
+    font-size: 0.6rem;
+    margin-top: 5px;
+}
+
