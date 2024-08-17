@@ -209,7 +209,8 @@
   outline: 1px solid var(--purple);
   border-radius: .5rem;
   color: var(--white);
-  padding: .5rem .75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-size: .85rem;
   width: 7rem;
   position: absolute;
@@ -231,11 +232,15 @@
 }
 
 .languages_list li {
-  padding: .5rem 0;
+  padding: .5rem 0.75rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
+}
+
+.languages_list li:hover {
+  background-color: #233554;
 }
 
 .languages_list li img {
