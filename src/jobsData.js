@@ -1,6 +1,6 @@
 const jobs = [
     {
-        id: 1, 
+        id: 0, 
         establecimiento: "Zebra High Performance", 
         puesto: "Practicante de programacion",
         periodo: "Octubre 2021 - Diciembre 2023", 
@@ -11,7 +11,7 @@ const jobs = [
     },
 
     {
-        id: 2, 
+        id: 1, 
         establecimiento: "Preparatoria Dos UADY", 
         puesto: "Prestador de servicio social",
         periodo: "febrero 2024 - Diciembre 2024", 

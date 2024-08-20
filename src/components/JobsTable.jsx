@@ -1,10 +1,12 @@
+import { style } from "@splidejs/splide/src/js/utils"
 import { useEffect,useState } from "react"
 
 
 function JobsTable({jobs}) {
- console.log(jobs)
-  const [trabajo, setTrabajo] = useState(1)
+//  console.log(jobs)
+  const [trabajo, setTrabajo] = useState(0)
 
+  
  
 
 
@@ -14,12 +16,14 @@ function JobsTable({jobs}) {
               {jobs.map((job)=>{
                 return(
                     <button key={job.id}
-                     onClick={()=>{setTrabajo(job.id)}}
+                     onClick={()=>setTrabajo(job.id)}
+                     className={`${job.id === trabajo ? "button_selected":""}`}
                     >
                       {job.establecimiento}
                       </button>
                 )
               })}
+              <div className="lineJobs" style={{transform:`translateY(calc(${trabajo}*3rem))`}}></div>
             </div>
 
       { jobs.map( ( job ) => {
