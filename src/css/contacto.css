@@ -1,0 +1,128 @@
+.contact_section {
+    padding: 6.5rem 0;   
+}
+
+.contact_grid {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    width: 100%;
+    margin: 4rem 5rem 0;
+    gap: 2rem;
+    grid-template-rows: auto 1fr;
+}
+
+/* .container_iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+} */
+
+@media (max-width: 890px) {
+    .contact_grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+.container_form {
+/* 
+border: 0.2rem solid brown; */
+}
+
+.container_map{ 
+ background-color: cadetblue;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 3rem;
+    align-items: center;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    background-color: #303841;
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 0.125rem;
+    font-size: 0.9rem;
+    border: none;
+    padding: 0.5rem;
+    box-shadow: none;
+}
+
+.form input:focus, textarea:focus {
+    box-shadow: 0 3px 0 0 var(--green)
+}
+
+.form textarea {
+  min-height: 8rem
+}
+
+.form button {
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 0.125rem;
+    background-color: #00ff99;
+    font-family: var(--font-inter);
+    color: #000;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+}
+
+.form button:hover {
+    background-color: #00e187;
+}
+
+.contactMethods {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-inline: 5rem;
+    width: 100%;
+}
+
+.method{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid brown; */
+    gap: 1rem;
+}
+
+.method h4 {
+    font-weight: 600;
+    color: var(--white);
+    font-family: var(--font-inter);
+    margin-bottom: 2px;
+    font-size: 1.15rem;
+}
+
+.container_icon{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-inline: 1.5rem;
+ padding-block: 1rem;
+ background-color: var(--bg-body);
+ 
+}
+
+.container_icon svg {
+    font-size: 2rem;
+    color: var(--green);
+    
+}
+
+.method p {
+    color: var(--white);
+    font-weight: 300;
+}

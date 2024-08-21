@@ -1,4 +1,4 @@
-import foto from "../assets/images/foto.png"
+import foto from "../assets/images/foto2.png"
 import '../css/about.css'
 import "@splidejs/splide/dist/css/splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -35,7 +35,10 @@ function About() {
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
         </div>
         <div className='about_photo'>
-          <img src={foto} className="photo" alt="foto-de-perfil" />
+          
+          <div className="container_photo">
+            <img src={foto} className="photo" alt="foto-de-perfil" />
+            </div>
           </div>
       </div>
       <div className="container_abilities">

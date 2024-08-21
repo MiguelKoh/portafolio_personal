@@ -43,12 +43,20 @@
 }
 
 .photo {
-    width: 20rem;
-    border-radius: 1.5em;
-    background: var(--gray);
+    width: 18rem;
+    border-radius:50%;
     aspect-ratio: 1 / 1;
-    border: 0.35rem solid var(--blue);
     object-fit: contain;
+    
+}
+
+.container_photo {
+    border: 0.35rem solid var(--blue);
+    border-radius: 50%;
+    width: 20rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
     
 }
 

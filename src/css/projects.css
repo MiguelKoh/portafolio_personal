@@ -21,9 +21,10 @@
     overflow: hidden;
     transition: transform 0.4s ease-out;
     position: relative;
+    grid-row: span 8;
   }
   
-  .projects_item:nth-child(odd) {
+  /* .projects_item:nth-child(odd) {
     grid-row: span 7;
   }
   
@@ -37,7 +38,7 @@
   
   .projects_item:last-child {
     grid-row: span 7;
-  } 
+  }  */
   
   .projects_item:hover::before {
     display: block;
@@ -146,13 +147,5 @@
     }
   }
   
-  @media (max-width: 560px) {
-    .projects_item:nth-child(1),
-    .projects_item:nth-child(4),
-    .projects_item:nth-child(5),
-    .projects_item:nth-child(6),
-    .projects_item:nth-child(8) {
-      background-position: top left;
-    }
-  }
+  
   
