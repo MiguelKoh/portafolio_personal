@@ -21,6 +21,8 @@
 @media (max-width: 890px) {
     .contact_grid {
         grid-template-columns: 1fr;
+        margin-inline: 1.3rem;
+        margin-block: 2rem;
     }
 
 }
@@ -39,6 +41,12 @@ border: 0.2rem solid brown; */
     gap: 1rem;
     padding-right: 3rem;
     align-items: center;
+}
+
+@media (max-width: 890px) {
+    .form {
+        padding-right: 0;
+    }
 }
 
 .form input,
@@ -88,7 +96,18 @@ border: 0.2rem solid brown; */
     justify-content: space-between;
     margin-inline: 5rem;
     width: 100%;
+    margin-top: 1.5rem;
 }
+
+@media (max-width: 890px) {
+    .contactMethods {
+        flex-direction: column;
+        margin-inline: 0;
+        align-items: flex-start;
+        margin-inline: 1.3rem;
+    }
+}
+
 
 .method{
     display: flex;
@@ -113,6 +132,7 @@ border: 0.2rem solid brown; */
  padding-inline: 1.5rem;
  padding-block: 1rem;
  background-color: var(--bg-body);
+ border-radius: 0.3rem;
  
 }
 
@@ -125,4 +145,10 @@ border: 0.2rem solid brown; */
 .method p {
     color: var(--white);
     font-weight: 300;
+}
+
+@media (max-width: 890px) {
+    .method {
+        font-size: 0.9rem;
+    }
 }

@@ -5,6 +5,7 @@ import ButtonTop from "./components/ButtonTop";
 import Experiencia from "./components/Experiencia";
 import Projects from "./components/Projects";
 import Contacto from "./components/Contacto";
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Projects/>
         <Contacto/>
       </main>
+      <Footer/>
     </>
   );
 }
