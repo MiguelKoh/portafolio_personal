@@ -4,7 +4,7 @@ import jobs from "../../src/jobsData"
 
 function Experiencia() {
   return (
-    <section className="experience_section">
+    <section className="experience_section nav_section" id="experience">
       <div className="container">
         <h2 className="section_title" data-number="2">Experiencia</h2>
         <div className="container_jobs">

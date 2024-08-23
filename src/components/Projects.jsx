@@ -4,7 +4,7 @@ import landing from '../assets/images/captura_landing.png'
 import TechName from "./TechName";
 function Projects() {
   return (
-    <div className="section_projects">
+    <section className="section_projects nav_section" id="projects">
         <div className='container'>
             <h2 className='section_title' data-number="3">Proyectos</h2>
             <div className='container_grid_projects'>
@@ -43,7 +43,7 @@ function Projects() {
             </div>
         </div>
         
-    </div>
+    </section>
   )
 }
 

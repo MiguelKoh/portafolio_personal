@@ -2,12 +2,12 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 import "../css/projects.css";
 
  const CardProject = ({
-  extlink,
+  extlink="/",
   imgsrc,
-  name,
-  repolink,
-  description,
-  techname,
+  name="nombre del proyecto",
+  repolink="https://github.com/",
+  description="descripcion",
+  techname="nombre de tecnologia",
 }) => {
   return (
     <article
@@ -23,7 +23,6 @@ import "../css/projects.css";
               href={extlink}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Link that redirects to the live view of the project"
             >
               {name}
             </a>
@@ -34,7 +33,6 @@ import "../css/projects.css";
               href={repolink}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Link that redirects to the project repository"
             >
               <FiGithub />
             </a>
@@ -43,7 +41,6 @@ import "../css/projects.css";
               href={extlink}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Link that redirects to the live view of the project"
             >
               <FiExternalLink />
             </a>

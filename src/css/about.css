@@ -43,7 +43,7 @@
 }
 
 .photo {
-    width: 18rem;
+    width: 16rem;
     border-radius:50%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
@@ -53,22 +53,28 @@
 .container_photo {
     border: 0.35rem solid var(--blue);
     border-radius: 50%;
-    width: 20rem;
+    width: 18rem;
     aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+    background-color: var(--gray);
     
 }
 
 @media (max-width: 890px) {
     .about_data, .about_photo {
         width: 100%;
+        margin-bottom: 1.5rem;
     }
 
     .photo {
+        width: 14rem;
+        margin:0;
+    }
+
+    .container_photo {
         width: 16rem;
-        border: 0.25rem solid var(--blue);
-        margin: 1rem 0 2rem;
     }
 }
 
@@ -110,16 +116,15 @@
 
 
 .slides_images {
-    width: 2.5rem;
+    width: 2.75rem;
 }
 
 .splide__slide  {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-body);
     border-radius: 0.75rem;
-    width: 3.5rem;
+    width: 3.4rem;
     aspect-ratio: 1/1;
     object-fit: contain;
 } 

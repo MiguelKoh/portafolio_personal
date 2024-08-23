@@ -51,6 +51,44 @@ function Header() {
   }, [])
   
 
+  useEffect(() => {
+
+    const callback = (entradas)=> {
+      
+      
+      entradas.forEach(entrada => {
+          const idSeccion = entrada.target.getAttribute("id")
+          const navLink = document.querySelector(`.nav_link[href*=${idSeccion}]`)
+        if (entrada.isIntersecting) {
+          
+          navLink.classList.add("active-link")
+         
+        }
+        else{
+          navLink.classList.remove("active-link")
+        }
+      });
+    }
+    
+    const secciones = document.querySelectorAll('.nav_section')
+    
+    const observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: '0px 0px 0px 0px',
+      threshold: 0.7
+    });
+
+    secciones.forEach((seccion)=>{
+      observer.observe(seccion)
+    })
+    
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [])
+
+  
 
 
 
@@ -64,16 +102,16 @@ function Header() {
           <ol className= {`nav_list ${menu ? "open_menu":""}`}>
             
             <li className="nav_item">
-              <a className="nav_link">Acerca de mí</a>
+              <a className="nav_link" href="#about" >Acerca de mí</a>
             </li>
             <li className="nav_item">
-              <a className="nav_link">Experiencia</a>
+              <a className="nav_link" href="#experience">Experiencia</a>
             </li>
             <li className="nav_item">
-              <a className="nav_link">Proyectos</a>
+              <a className="nav_link" href="#projects">Proyectos</a>
             </li>
             <li className="nav_item">
-              <a className="nav_link">Contacto</a>
+              <a className="nav_link" href="#contact">Contacto</a>
             </li>
           </ol>
           <button

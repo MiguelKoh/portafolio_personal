@@ -1,4 +1,4 @@
-import foto from "../assets/images/foto2.png"
+import foto from "../assets/images/foto4.png"
 import '../css/about.css'
 import "@splidejs/splide/dist/css/splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -23,7 +23,7 @@ function About() {
   ]
 
   return (
-    <section className='about_section' id='about'>
+    <section className='about_section nav_section' id='about'>
       <div className='container'>
       <h2 className='section_title' data-number="1">Acerca de mí</h2>
       <div className='about'>
@@ -61,7 +61,7 @@ function About() {
                 aria-label="Skills List"
                 options={{
                   type: "loop",
-                  gap: "2rem",
+                  gap: "1.75rem",
                   drag: "free",
                   arrows: false,
                   pagination: false,

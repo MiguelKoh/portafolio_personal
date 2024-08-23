@@ -8,7 +8,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 function Contacto() {
   return (
-    <section className='contact_section'>
+    <section className='contact_section nav_section' id='contact'>
         <div className="container">
             <h2 className="section_title" data-number="4">Contacto</h2>
             <div className='contact_grid'>
