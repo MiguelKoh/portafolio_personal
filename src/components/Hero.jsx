@@ -33,7 +33,7 @@ function Hero() {
         <div className="hero_links">
             <a href="#about" className='btn_primary'>Conoce más</a>
           <div className="social_links">
-            <SocialLink link={"https://github.com/"} arialabel={"Github"} icon={<FiGithub/>}/>
+            <SocialLink link={"https://github.com/MiguelKoh"} arialabel={"Github"} icon={<FiGithub/>}/>
             <SocialLink link={"https://www.linkedin.com/"} arialabel={"Linkedin"} icon={<SlSocialLinkedin/>}/>
             <SocialLink link={"https://wa.me/529994090432"} arialabel={"Whatsapp"} icon={<ImWhatsapp/>}/>
             <SocialLink link={"mailto:miguelkohavila@gmail.com"} arialabel={"correo"} icon={<MdAlternateEmail/>}/> 
