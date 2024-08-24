@@ -4,9 +4,8 @@ import SocialLink from './SocialLink';
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { ImWhatsapp } from "react-icons/im";
-import energy from "../assets/images/energia2.png"
-import logo2 from "../assets/images/v0.png"
-import logo from "../assets/images/logo_ME_wider_with_tags_visible.png"
+import energy from "../assets/images/energia2_opt.png"
+import logo2 from "../assets/images/v0_opt.png"
 import { MdAlternateEmail } from "react-icons/md";
 
 function Hero() {

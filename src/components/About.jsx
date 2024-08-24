@@ -1,15 +1,14 @@
-import foto from "../assets/images/foto4.png"
+import foto from "../assets/images/foto4_opt.png"
 import '../css/about.css'
 import "@splidejs/splide/dist/css/splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import { display } from "@splidejs/splide/src/js/utils"
-import iconReact from "../assets/images/frameworks/iconReact.png"
-import iconBootrastrap from "../assets/images/frameworks/iconBootstrap.png"
-import iconFirebase from "../assets/images/frameworks/iconFirebase.png"
-import iconGit from "../assets/images/frameworks/iconGit.png"
-import iconTailwind from "../assets/images/frameworks/iconTailwind.png"
-import iconoJavascript from "../assets/images/frameworks/iconJavascript.png"
+import iconReact from "../assets/images/tecnologias/iconReact_opt.png"
+import iconBootrastrap from "../assets/images/tecnologias/iconBootstrap_opt.png"
+import iconFirebase from "../assets/images/tecnologias/iconFirebase_opt.png"
+import iconGit from "../assets/images/tecnologias/iconGit_opt.png"
+import iconTailwind from "../assets/images/tecnologias/iconTailwind_opt.png"
+import iconoJavascript from "../assets/images/tecnologias/iconJavascript_opt.png"
 
 function About() {
   
@@ -37,7 +36,7 @@ function About() {
         <div className='about_photo'>
           
           <div className="container_photo">
-            <img src={foto} className="photo" alt="foto-de-perfil" />
+            <img src={foto} loading="lazy" className="photo" alt="foto-de-perfil" />
             </div>
           </div>
       </div>
