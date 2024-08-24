@@ -22,7 +22,7 @@ function Projects() {
                     <TechName name="Tailwind" />
                     <TechName name="React-router" />
                     <TechName name="Swiper" />
-                    <TechName name="react hook form" />
+                    <TechName name="React Hook Form" />
                   </>
             }
           />
@@ -50,10 +50,10 @@ function Projects() {
                 description={"Es una landing page que trabaje anteriormente pero decidi replicar en react"}
                 techname={
                   <>
-                    <TechName name="React" />
-                    <TechName name="Firebase" />
-                    <TechName name="React-router" />
-                    <TechName name="Styled components" />
+                    <TechName name="PHP" />
+                    <TechName name="Js" />
+                    <TechName name="Bootstrap" />
+                    <TechName name="Swiper" />
                   </>
             }
           />
