@@ -52,17 +52,18 @@
 
 .button_selected {
     color: var(--green)!important;
-    background-color: var(--lightest-navy)!important;
+    background-color: #1c2a44!important;
 }
 
 .workplaces button:hover {
-    background-color: var(--lightest-navy);
-    transition: background-color .5s ease;
+    background-color: #1c2a44;
+    color: var(--green);
+    transition: all .5s ease;
 }
 
 .jobs_activities {
     width: 65%;
-    border-color: blue;
+    animation: revealJob 1s linear;
 }
 @media (max-width: 890px) {
     .jobs_activities {
@@ -115,5 +116,17 @@
     border-radius:4px;
     background: var(--green);
     transition: transform 0.20s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s; 
+}
+
+@keyframes revealJob {
+    from {
+        opacity: 0;
+        /* transform: translateY(-.32rem); */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0); */
+    }
+
 }
 

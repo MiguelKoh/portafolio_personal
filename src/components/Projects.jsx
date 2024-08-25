@@ -29,7 +29,7 @@ function Projects() {
           <CardProject
                 extlink="https://app-lista-gastos-d3526.web.app/iniciar-sesion"
                 imgsrc={appGastos}
-                repolink="https://github.com/MiguelKoh/landing-portafolio"
+                repolink="https://github.com/MiguelKoh/app_lista_gastos"
                 name="Aplicacion de gastos"
                 description={"Es una landing page que trabaje anteriormente pero decidi replicar en react"}
                 techname={

@@ -2,7 +2,9 @@ import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
+
 function Formulario() {
+
 
 const schema = Yup.object().shape({
   nombre: Yup.string()
@@ -34,22 +36,22 @@ const onSubmit = (data)=>{
     <>
     <form className="form" onSubmit={handleSubmit(onSubmit)}>
         
-        <input type="text"  placeholder="Nombre" {...register("nombre")} autoComplete="off" required/>
+        <input type="text"  placeholder="Nombre" {...register("nombre")} autoComplete="off"/>
         {errors.nombre && (
            <span className="errors">{errors.nombre.message}</span>
          )}
 
-        <input type="email" placeholder="Tu correo" {...register("correo")} autoComplete="off" required/>
+        <input type="email" placeholder="Tu correo" {...register("correo")} autoComplete="off"/>
         {errors.correo && (
            <span className="errors">{errors.correo.message}</span>
          )}
 
-        <input type="text" placeholder="Asunto" {...register("asunto")} autoComplete="off" required/>
+        <input type="text" placeholder="Asunto" {...register("asunto")} autoComplete="off"/>
         {errors.asunto && (
            <span className="errors">{errors.asunto.message}</span>
          )}
         
-        <textarea placeholder="Mensaje" {...register("mensaje")} autoComplete="off" required></textarea> 
+        <textarea placeholder="Mensaje" {...register("mensaje")} autoComplete="off"></textarea> 
         {errors.mensaje && (
            <span className="errors">{errors.mensaje.message}</span>
          )}
