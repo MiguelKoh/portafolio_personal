@@ -36,7 +36,7 @@ function About() {
         <div className='about_photo'>
           
           <div className="container_photo">
-            <img src={foto} loading="lazy" className="photo" alt="foto-de-perfil" />
+            <img src={foto} className="photo" loading="lazy" alt="foto-de-perfil" />
             </div>
           </div>
       </div>

@@ -12,7 +12,7 @@ import "../css/projects.css";
   return (
     <article
       className="projects_item"
-      style={{ backgroundImage: `url(${imgsrc})` }}
+      data-bg={ `url(${imgsrc})` }
       data-aos="fade-up"
       data-aos-delay="100"
     >
