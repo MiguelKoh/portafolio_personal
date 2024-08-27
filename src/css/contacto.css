@@ -68,7 +68,7 @@ form input:first-child {
 
 
 .form input:focus, textarea:focus {
-    box-shadow: 0 2px 0 0 var(--green)
+    box-shadow: 0 0 0 0.09rem var(--green);
 }
 
 .form textarea {
@@ -178,9 +178,15 @@ form input:first-child {
 
 }
 
+.send_success {
+    line-height: 1.5715;
+    font-size: .875rem;
+    color: green;
+}
 
 @media (max-width: 890px) {
     .method {
         font-size: 0.9rem;
     }
 }
+

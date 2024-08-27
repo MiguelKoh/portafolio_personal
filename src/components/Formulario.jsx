@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import emailjs from '@emailjs/browser';
 
 
 function Formulario() {
@@ -28,10 +29,32 @@ const schema = Yup.object().shape({
 const { register, watch, reset, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema), 
   mode: "onSubmit" });
 
-const onSubmit = (data)=>{
-  console.log(data)
-  reset();
-}
+  const keysID = {
+    service_id: import.meta.env.VITE_APP_YOUR_SERVICE_ID,
+    template_id: import.meta.env.VITE_APP_YOUR_TEMPLATE_ID,
+    public_key: import.meta.env.VITE_APP_YOUR_PUBLIC_KEY
+
+  }
+
+  const onSubmit = (data) => {
+    
+    const emailData = {
+      user_name: data.nombre,
+      user_email: data.correo,
+      subject: data.asunto,  
+      message: data.mensaje
+    };
+  
+    emailjs.send(keysID.service_id, keysID.template_id, emailData, keysID.public_key)
+      .then(() => {
+        console.log('SUCCESS!');
+        reset();
+      }, (error) => {
+        console.log('FAILED...', error.text);
+      });
+  };
+  
+
   return (
     <>
     <form className="form" onSubmit={handleSubmit(onSubmit)}>
