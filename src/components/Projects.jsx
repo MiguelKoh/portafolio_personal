@@ -48,8 +48,8 @@ function Projects() {
                 extlink="https://miguelkoh.github.io/landing-portafolio/"
                 imgsrc={landing}
                 repolink="https://github.com/MiguelKoh/landing-portafolio"
-                name="Landing Santamar"
-                description={"Es una landing page que trabaje anteriormente pero decidi replicar en react"}
+                name="Landing Page - Santamar"
+                description={"Es una landing page que desarrolle previamente en Wordpress para una inmobiliaria  pero decidi replicar en React"}
                 techname={
                   <>
                     <TechName name="React" />
@@ -57,6 +57,7 @@ function Projects() {
                     <TechName name="React-router" />
                     <TechName name="Swiper" />
                     <TechName name="React Hook Form" />
+                    <TechName name="Yup" />
                   </>
             }
           />
@@ -79,13 +80,13 @@ function Projects() {
         <CardProject
                 extlink="https://siscap.uady.mx/siscap/tienda-virtual/escolares.php"
                 imgsrc={tiendaVirtual}
-                repolink="https://github.com/MiguelKoh/landing-portafolio"
-                name="Tienda virtual"
-                description={"Es una landing page que trabaje anteriormente pero decidi replicar en react"}
+                repolink="https://github.com/MiguelKoh/tiendaVirtual"
+                name="Tienda virtual - Preparatoria Dos UADY"
+                description={"Es una tienda virtual para la venta de uniformes escolares que desarrolle  durante mi estadia en la Preparatoria Dos"}
                 techname={
                   <>
                     <TechName name="PHP" />
-                    <TechName name="Js" />
+                    <TechName name="JS" />
                     <TechName name="Bootstrap" />
                     <TechName name="Swiper" />
                   </>

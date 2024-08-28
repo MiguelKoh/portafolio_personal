@@ -30,8 +30,7 @@ function About() {
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum facilis, architecto quia commodi deleniti ullam perferendis, nulla repellat voluptatum accusantium, consequuntur quod ipsa minus. Ipsam quas in laudantium beatae quaerat!</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia numquam corrupti officia quo id, saepe molestiae repellendus est minima autem recusandae aut aspernatur quaerat quos accusamus alias laborum blanditiis illum!</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nihil maiores quae minima dolorum enim iste nisi ullam eveniet excepturi. Blanditiis, id! Eligendi cum eius, voluptas inventore ratione exercitationem placeat!.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicingu.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+            <p>Estas son algunas de las tecnologías con las que he podido trabajar:</p>
         </div>
         <div className='about_photo'>
           
@@ -81,7 +80,6 @@ function About() {
                       return (
                         <SplideSlide key={index}>
                         <img src={imagen.src} alt={imagen.alt} className="slides_images" />
-                        
                         </SplideSlide>)
                     })
                   }

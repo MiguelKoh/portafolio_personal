@@ -4,6 +4,7 @@ import SocialLink from './SocialLink';
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { ImWhatsapp } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
 import energy from "../assets/images/energia2_opt.png"
 import logo2 from "../assets/images/v0_opt.png"
 import { MdAlternateEmail } from "react-icons/md";
@@ -36,7 +37,7 @@ function Hero() {
             <SocialLink link={"https://github.com/MiguelKoh"} arialabel={"Github"} icon={<FiGithub/>}/>
             <SocialLink link={"https://www.linkedin.com/"} arialabel={"Linkedin"} icon={<SlSocialLinkedin/>}/>
             <SocialLink link={"https://wa.me/529994090432"} arialabel={"Whatsapp"} icon={<ImWhatsapp/>}/>
-            <SocialLink link={"mailto:miguelkohavila@gmail.com"} arialabel={"correo"} icon={<MdAlternateEmail/>}/> 
+            <SocialLink link={"mailto:miguelkohavila@gmail.com"} arialabel={"correo"} icon={<MdEmail/>}/> 
           </div>
         </div>
         <div className="top_left_edges"></div>

@@ -3,7 +3,7 @@ import Formulario from './Formulario'
 import { FaLocationDot } from "react-icons/fa6";
 import ContactMethod from './ContactMethod';
 import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
+import { ImWhatsapp } from "react-icons/im";
 
 
 function Contacto() {
@@ -29,20 +29,23 @@ function Contacto() {
             </div>
             <div className="contactMethods">
                   <ContactMethod 
-                    titulo='Ubicacion' 
-                    descripcion='Merida Yucatan Mexico' 
+                    titulo='Ubicación' 
+                    descripcion='Mérida, Yucatán, México' 
                     icono={<FaLocationDot/>}
+                    link={"https://maps.app.goo.gl/2Czz1ndrRSpSYhea8"}
                   />
                   <ContactMethod 
-                    titulo='Correo' 
+                    titulo='Correo electrónico' 
                     descripcion='miguelkohavila@gmail.com' 
                     icono={<MdEmail />}
+                    link={"mailto:miguelkohavila@gmail.com"}
                   />
 
                   <ContactMethod 
-                    titulo='Telefono' 
-                    descripcion='+52-999-4090-432' 
-                    icono={<FaPhoneAlt />}
+                    titulo='WhatsApp' 
+                    descripcion='+52 999 4090 432' 
+                    icono={<ImWhatsapp />}
+                    link={"https://wa.me/529994090432"}
                   />
 
                 </div>

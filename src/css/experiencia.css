@@ -19,7 +19,7 @@
 }
 
 .jobs_table {
-    width: 50rem;
+    width: 55rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -41,6 +41,7 @@
     width: 85%;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 3rem;
     cursor: pointer;
     padding: 0px 20px 2px;
@@ -88,16 +89,18 @@
 
 .jobs_activities ul li {
     list-style: none;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     font-family: var(--font-mono);
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
     color: var(--light-slate);
+    line-height: 1.5;
 }
 
 .jobs_activities ul{
     margin-top: 1.5rem;
+    
 }
 
 .jobs_activities ul li:before {
@@ -112,7 +115,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-    width: 2px;
+    width: 1.5px;
     height:3rem;
     border-radius:4px;
     background: var(--green);

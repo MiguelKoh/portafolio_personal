@@ -2,10 +2,13 @@ import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import emailjs from '@emailjs/browser';
+import { useState } from "react";
 
 
 function Formulario() {
 
+const [enviado, setEnviado] = useState(false)
+const [cargando, setCargando] = useState(false)
 
 const schema = Yup.object().shape({
   nombre: Yup.string()
@@ -33,24 +36,31 @@ const { register, watch, reset, handleSubmit, formState: { errors } } = useForm(
     service_id: import.meta.env.VITE_APP_YOUR_SERVICE_ID,
     template_id: import.meta.env.VITE_APP_YOUR_TEMPLATE_ID,
     public_key: import.meta.env.VITE_APP_YOUR_PUBLIC_KEY
-
   }
 
+  const {service_id,template_id,public_key} = keysID
+
   const onSubmit = (data) => {
-    
+    reset();
+    setCargando(true); // Inicia el loader
+
     const emailData = {
       user_name: data.nombre,
       user_email: data.correo,
-      subject: data.asunto,  
-      message: data.mensaje
+      subject: data.asunto,
+      message: data.mensaje,
+      from_name:"Portafolio personal",
+      to_name:"Miguel Koh Avila"
     };
-  
-    emailjs.send(keysID.service_id, keysID.template_id, emailData, keysID.public_key)
+
+    emailjs.send(service_id, template_id, emailData, public_key)
       .then(() => {
-        console.log('SUCCESS!');
-        reset();
-      }, (error) => {
+        setCargando(false); // Finaliza el loader
+        setEnviado(true); // Muestra el mensaje de éxito
+      })
+      .catch((error) => {
         console.log('FAILED...', error.text);
+        setCargando(false); // Finaliza el loader si hay un error
       });
   };
   
@@ -80,6 +90,14 @@ const { register, watch, reset, handleSubmit, formState: { errors } } = useForm(
          )}
 
         <button>Enviar mensaje</button>
+        
+        {cargando && (
+           <div className="loader"></div>
+         )}
+        {enviado && (
+           <span className="send_success">Mensaje enviado correctamente</span>
+         )}
+         
     </form>
     {/* <pre>
         {JSON.stringify(watch(),null,2)}

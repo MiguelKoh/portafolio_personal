@@ -1,25 +1,26 @@
 const jobs = [
-    {
-        id: 0, 
-        establecimiento: "Zebra High Performance", 
-        puesto: "Practicante de programacion",
-        periodo: "Octubre 2021 - Diciembre 2023", 
-        actividades: 
-        [ "Soporte tecnico servidores",
-          "Maquetacion de landings pages",
-          "Desarrollo del sistema interno de la empresa" ]
-    },
+  {
+      id: 0, 
+      establecimiento: "Zebra High Performance", 
+      puesto: "Programador web",
+      periodo: "Noviembre 2021 - Junio 2023", 
+      actividades: 
+      [ "Trabajé en el desarrollo y mantenimiento de e-commerce en plataformas como Shopify y WordPress",
+        "Realicé rediseños y optimizaciones a los sitios web de los clientes",
+        "Proporcioné soporte técnico a los clientes",
+        "Desarrollo de módulos para el sistema administrativo de la empresa" ]
+  },
 
-    {
-        id: 1, 
-        establecimiento: "Preparatoria Dos UADY", 
-        puesto: "Prestador de servicio social",
-        periodo: "febrero 2024 - Diciembre 2024", 
-        actividades: 
-        [ "Desarrollo de tienda virtual para la venta de uniformes",
-          "Desarrollo de modulos para el Siscap",
-          "Propuestas de mejora administrativa" ]
-    },
+  {
+      id: 1, 
+      establecimiento: "Preparatoria Dos UADY", 
+      puesto: "Programador web",
+      periodo: "Junio 2023 - junio 2024", 
+      actividades: 
+      [ "Diseño y programación de una tienda virtual para la compra y venta de uniformes escolares",
+        "Desarrollo y mantenimiento de módulos del Sistema de Cargas Académicas (SISCAP)",
+        "Mantenimiento y mejoras de módulos del Sistema de Control de Asistencias (reloj checador)" ]
+  },
 
 ]
 
