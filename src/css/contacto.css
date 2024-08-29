@@ -150,16 +150,16 @@ form input:first-child {
 }
 
 .method a {
-    color: var(--white);
-    font-weight: 300;
+    color: var(--gray);
+    font-weight: 400;
+    transition: color .5s ease-out;
 }
 
+.method a:hover {
+    color: var(--light-slate);
+}
 .errors {
-    /* color: rgb(220 38 38); */
-    /* font-weight: 500; */
-    /* font-size: .875rem; */
     padding-left: 0.1rem;
-    /* margin-top: 0.2rem; */
     line-height: 1.5715;
     font-size: .875rem;
     color:#ef5771;

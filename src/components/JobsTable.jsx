@@ -30,7 +30,11 @@ function JobsTable({jobs}) {
        if(trabajo === job.id) {
         return (
           <div key={job.id} className="jobs_activities">
+            <div className="job_title_container">
             <h3 className="job_title">{ job.puesto }</h3>
+            <span>-</span>
+            <a href={job.urlEmpresa} target="_blank">{job.establecimiento}</a>
+            </div>
             <p className="range">{ job.periodo }</p>
             <ul>
               { job.actividades.map( ( actividad,index ) =>

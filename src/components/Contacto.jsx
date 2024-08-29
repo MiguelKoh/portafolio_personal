@@ -43,7 +43,7 @@ function Contacto() {
 
                   <ContactMethod 
                     titulo='WhatsApp' 
-                    descripcion='+52 999 4090 432' 
+                    descripcion='(+52) 999 4090 432' 
                     icono={<ImWhatsapp />}
                     link={"https://wa.me/529994090432"}
                   />

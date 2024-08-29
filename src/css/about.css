@@ -18,13 +18,14 @@
 
 .about_data {
     width: 50%;
+    text-align: justify;
 }
 
 .about_data p {
     font-family: var(--font-inter);
-    font-size: .95rem;
     line-height: 1.5;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--light-slate);
 }
 
 @media (max-width: 420px) {
@@ -91,6 +92,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: var(--light-slate)
 }
 
 .technologies ul li:before {
@@ -161,3 +163,7 @@
         margin-top: 1.8rem;
     }
 }
+
+
+
+  

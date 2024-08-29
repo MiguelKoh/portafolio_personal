@@ -65,14 +65,15 @@ function Projects() {
                 extlink="https://app-lista-gastos-d3526.web.app/iniciar-sesion"
                 imgsrc={appGastos}
                 repolink="https://github.com/MiguelKoh/app_lista_gastos"
-                name="Aplicacion de gastos"
-                description={"Es una landing page que trabaje anteriormente pero decidi replicar en react"}
+                name="Aplicación  de gastos personales"
+                description={"Es una aplicación para administrar los gastos personales, la aplicación permite registrar por cada gasto, la categoría, descripción, costo y fecha. Al registrar el gasto es posible acceder a una lista con cada gasto registrado y también a una lista de gastos por categoría. La aplicación utiliza Firebase para el backend y React para el front-end, además incluye autenticación de usuarios. "}
                 techname={
                   <>
                     <TechName name="React" />
                     <TechName name="Firebase" />
                     <TechName name="React-router" />
                     <TechName name="Styled components" />
+                    <TechName name="React-day-picker"/>
                   </>
             }
           />

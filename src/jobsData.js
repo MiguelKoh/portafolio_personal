@@ -3,7 +3,8 @@ const jobs = [
       id: 0, 
       establecimiento: "Zebra High Performance", 
       puesto: "Programador web",
-      periodo: "Noviembre 2021 - Junio 2023", 
+      periodo: "Noviembre 2021 - Junio 2023",
+      urlEmpresa:"https://mercadotecnia-digital.com/",
       actividades: 
       [ "Trabajé en el desarrollo y mantenimiento de e-commerce en plataformas como Shopify y WordPress",
         "Realicé rediseños y optimizaciones a los sitios web de los clientes",
@@ -15,7 +16,8 @@ const jobs = [
       id: 1, 
       establecimiento: "Preparatoria Dos UADY", 
       puesto: "Programador web",
-      periodo: "Junio 2023 - junio 2024", 
+      periodo: "Junio 2023 - junio 2024",
+      urlEmpresa:"https://www.prepa2.uady.mx/",
       actividades: 
       [ "Diseño y programación de una tienda virtual para la compra y venta de uniformes escolares",
         "Desarrollo y mantenimiento de módulos del Sistema de Cargas Académicas (SISCAP)",

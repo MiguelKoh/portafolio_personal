@@ -1,3 +1,4 @@
+
 import foto from "../assets/images/foto4_opt.png"
 import '../css/about.css'
 import "@splidejs/splide/dist/css/splide.min.css";
@@ -27,9 +28,10 @@ function About() {
       <h2 className='section_title' data-number="1">Acerca de mí</h2>
       <div className='about'>
         <div className='about_data'>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum facilis, architecto quia commodi deleniti ullam perferendis, nulla repellat voluptatum accusantium, consequuntur quod ipsa minus. Ipsam quas in laudantium beatae quaerat!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia numquam corrupti officia quo id, saepe molestiae repellendus est minima autem recusandae aut aspernatur quaerat quos accusamus alias laborum blanditiis illum!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nihil maiores quae minima dolorum enim iste nisi ullam eveniet excepturi. Blanditiis, id! Eligendi cum eius, voluptas inventore ratione exercitationem placeat!.</p>
+            <p>Hola me llamo Miguel y me especializo en el desarrollo front-end, sin embargo, también tengo algunos conocimientos en back-end.</p>
+            <p>Decidí especializarme en el front-end porque me permite trabajar en lo que más disfruto: la interfaz de usuario. Me gusta crear algo visual que cobre vida. </p>
+            <p>Estudie la licenciatura en Tecnologías de la Informacion. Durante esa etapa todavía no había decidido qué camino quería elegir, pero, tome algunas clases de desarrollo web y despertaron mi interés en el área. </p>
+            <p>Constantemente estoy aprendiendo nuevos temas y practicando los que ya conozco. Cuando realizo proyectos siempre trato de aplicar las mejores prácticas en el código y en mantener el mayor rendimiento posible del sitio o aplicación web. </p>
             <p>Estas son algunas de las tecnologías con las que he podido trabajar:</p>
         </div>
         <div className='about_photo'>
@@ -47,7 +49,7 @@ function About() {
                 <li>Tailwind css</li>
               </ul>
               <ul>
-                <li>Codeigniter 4</li>
+                <li>PHP</li>
                 <li>Firebase</li>
                 <li>Wordpress</li>
               </ul>
