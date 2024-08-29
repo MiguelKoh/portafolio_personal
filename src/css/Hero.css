@@ -230,7 +230,7 @@ a[href='/'] {
     display: flex;
     align-items:center;
     justify-content: space-between;
-    margin: 3.5rem 0 2rem;
+    margin: 3.7rem 0 2rem;
     width: 100%;
 }
 
@@ -285,6 +285,12 @@ a[href='/'] {
 .btn_primary:hover:before {
     transform: translateZ(1rem)
 }
+
+.btn_primary.goToCV {
+  background-color: var(--dark-purple);
+  border-radius: 5rem;
+}
+
 
 .social_links {
     display: flex;

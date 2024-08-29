@@ -28,10 +28,10 @@ function About() {
       <h2 className='section_title' data-number="1">Acerca de mí</h2>
       <div className='about'>
         <div className='about_data'>
-            <p>Hola me llamo Miguel y me especializo en el desarrollo front-end, sin embargo, también tengo algunos conocimientos en back-end.</p>
-            <p>Decidí especializarme en el front-end porque me permite trabajar en lo que más disfruto: la interfaz de usuario. Me gusta crear algo visual que cobre vida. </p>
-            <p>Estudie la licenciatura en Tecnologías de la Informacion. Durante esa etapa todavía no había decidido qué camino quería elegir, pero, tome algunas clases de desarrollo web y despertaron mi interés en el área. </p>
-            <p>Constantemente estoy aprendiendo nuevos temas y practicando los que ya conozco. Cuando realizo proyectos siempre trato de aplicar las mejores prácticas en el código y en mantener el mayor rendimiento posible del sitio o aplicación web. </p>
+            <p>Hola me llamo Miguel, soy desarrollador front-end, sin embargo, también tengo algunos conocimientos en back-end.</p>
+            <p>Decidí enfocarme más en el front-end, porque me permite trabajar en lo que más disfruto: la interfaz de usuario. Me gusta crear algo visual que cobre vida.</p>
+            <p>Estudié la Licenciatura en Tecnologías de la Información. Durante esa etapa, aún no tenía claro cuál sería mi camino profesional, pero al tomar algunas clases de desarrollo web, descubrí mi interés por esa área.</p>
+            <p>Constantemente estoy aprendiendo nuevos temas y practicando los que ya conozco. Siempre que realizo mis proyectos trato de aplicar las mejores prácticas en el código y en mantener el mayor rendimiento posible del sitio o aplicación web.</p>
             <p>Estas son algunas de las tecnologías con las que he podido trabajar:</p>
         </div>
         <div className='about_photo'>
@@ -56,6 +56,7 @@ function About() {
               </div>
       
       <div className="container_carousel">
+     
       <div className="slider_container">
            <Splide
                 aria-label="Skills List"

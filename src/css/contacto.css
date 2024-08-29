@@ -6,10 +6,10 @@
     display: grid;
     grid-template-columns: 1fr 40%;
     width: 100%;
-    margin: 4rem 5rem 0;
     gap: 2rem;
     grid-template-rows: auto 1fr;
     position: relative;
+    margin-inline: 5rem;
 }
 
 /* .container_iframe {
@@ -214,7 +214,6 @@ form input:first-child {
   }
   @keyframes l3 {to{transform: rotate(1turn)}}
 
-
   @media (max-width: 890px) {
   .loader {
     bottom: 104%;
@@ -225,5 +224,27 @@ form input:first-child {
     font-size: 0.9rem
    
 }
+
+}
+
+.text_contact {
+    margin-inline: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: var(--light-slate);
+}
+
+@media (max-width: 890px) {
+
+    .text_contact {
+    margin-left: 1.3rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+
 
 }

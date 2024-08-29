@@ -20,8 +20,7 @@ function Hero() {
             Construyo sitios web y aplicaciones increibles
           </h3>
           <p className="hero_description">
-            Soy un desarrollador web front-end y Licenciado en Tecnologías de la Información que disfruta crear conceptos fantásticos y experiencias
-            digitales para la web.
+              Soy un desarrollador web front-end y Licenciado en Tecnologías de la Información, comprometido por diseñar experiencias digitales excepcionales y materializar ideas creativas en entornos web.
           </p>
         </div>
         <div className="container_foto">
@@ -33,6 +32,7 @@ function Hero() {
         </div>
         <div className="hero_links">
             <a href="#about" className='btn_primary'>Conoce más</a>
+            <a href="#about" className='btn_primary goToCV'>Descarga mi CV</a>
           <div className="social_links">
             <SocialLink link={"https://github.com/MiguelKoh"} arialabel={"Github"} icon={<FiGithub/>}/>
             <SocialLink link={"https://www.linkedin.com/"} arialabel={"Linkedin"} icon={<SlSocialLinkedin/>}/>

@@ -11,6 +11,7 @@ function Contacto() {
     <section className='contact_section nav_section' id='contact'>
         <div className="container">
             <h2 className="section_title" data-number="4">Contacto</h2>
+            <p className='text_contact'>Estoy entusiasmado por la posibilidad de nuevas oportunidades de trabajo. Puedes ponerte en contacto conmigo a través del siguiente formulario o contactarme en mis redes sociales que estan más abajo. ¡Espero que podamos colaborar pronto!</p>
             <div className='contact_grid'>
                 <div className='container_form'>
                   <Formulario/>
