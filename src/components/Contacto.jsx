@@ -4,14 +4,16 @@ import { FaLocationDot } from "react-icons/fa6";
 import ContactMethod from './ContactMethod';
 import { MdEmail } from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
-
+import { SlSocialLinkedin } from "react-icons/sl";
+import {useTranslation} from "react-i18next"
 
 function Contacto() {
+  const [t]= useTranslation("global");
   return (
     <section className='contact_section nav_section' id='contact'>
         <div className="container">
-            <h2 className="section_title" data-number="4">Contacto</h2>
-            <p className='text_contact'>Estoy entusiasmado por la posibilidad de nuevas oportunidades de trabajo. Puedes ponerte en contacto conmigo a través del siguiente formulario o contactarme en mis redes sociales que estan más abajo. ¡Espero que podamos colaborar pronto!</p>
+            <h2 className="section_title" data-number="4">{t("section_contact.title")}</h2>
+            <p className='text_contact'>{t("section_contact.paragraph")}</p>
             <div className='contact_grid'>
                 <div className='container_form'>
                   <Formulario/>
@@ -30,20 +32,20 @@ function Contacto() {
             </div>
             <div className="contactMethods">
                   <ContactMethod 
-                    titulo='Ubicación' 
-                    descripcion='Mérida, Yucatán, México' 
-                    icono={<FaLocationDot/>}
-                    link={"https://maps.app.goo.gl/2Czz1ndrRSpSYhea8"}
+                    titulo="LinkedIn"
+                    descripcion={t("section_contact.linkedIn")} 
+                    icono={<SlSocialLinkedin/>}
+                    link={"https://www.linkedin.com/in/miguel-elias-koh-avila-557972216/"}
                   />
                   <ContactMethod 
-                    titulo='Correo electrónico' 
+                    titulo={t("section_contact.email")} 
                     descripcion='miguelkohavila@gmail.com' 
                     icono={<MdEmail />}
                     link={"mailto:miguelkohavila@gmail.com"}
                   />
 
                   <ContactMethod 
-                    titulo='WhatsApp' 
+                    titulo="WhatsApp" 
                     descripcion='(+52) 999 4090 432' 
                     icono={<ImWhatsapp />}
                     link={"https://wa.me/529994090432"}

@@ -7,13 +7,19 @@ import UsFlag from "../assets/images/us-flag.svg";
 import { useEffect, useRef, useState } from "react";
 import logo from "../assets/images/logo_opt.png"
 import '../css/header.css'
+import {useTranslation} from "react-i18next"
 
 
 function Header() {
+
+  const [t,i18n]= useTranslation("global");
   const [menu, setMenu] = useState(false)
   const [isOpen, setIsOpen] = useState(false);
   const [headerScroll, setHeaderScroll] = useState(false)
   
+
+  
+
   const btnRef = useRef();
   
   useEffect(() => {
@@ -102,16 +108,16 @@ function Header() {
           <ol className= {`nav_list ${menu ? "open_menu":""}`}>
             
             <li className="nav_item">
-              <a className="nav_link" href="#about" >Acerca de mí</a>
+              <a className="nav_link" href="#about" >{t("section_header.about")}</a>
             </li>
             <li className="nav_item">
-              <a className="nav_link" href="#experience">Experiencia</a>
+              <a className="nav_link" href="#experience">{t("section_header.experience")}</a>
             </li>
             <li className="nav_item">
-              <a className="nav_link" href="#projects">Proyectos</a>
+              <a className="nav_link" href="#projects">{t("section_header.projects")}</a>
             </li>
             <li className="nav_item">
-              <a className="nav_link" href="#contact">Contacto</a>
+              <a className="nav_link" href="#contact">{t("section_header.contact")}</a>
             </li>
           </ol>
           <button
@@ -141,12 +147,12 @@ function Header() {
         <img className="arrow_icon" src={ArrowDown} alt="" width={19} height={19} />
         </button>
         <ul className={`languages_list ${isOpen ? "open" : ""}`}>
-            <li>
-              <img src={UsFlag} alt="" /> Ingles
+            <li onClick={()=>i18n.changeLanguage("en")}>
+              <img src={UsFlag} alt="" /> {t("section_header.english")}
             </li>
           
-            <li>
-              <img src={MxFlag} alt="" /> Español
+            <li onClick={()=>i18n.changeLanguage("es")}>
+              <img src={MxFlag} alt="" /> {t("section_header.spanish")}
             </li>
         </ul>
         </div>

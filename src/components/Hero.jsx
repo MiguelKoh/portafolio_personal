@@ -8,19 +8,22 @@ import { MdEmail } from "react-icons/md";
 import energy from "../assets/images/energia2_opt.png"
 import logo2 from "../assets/images/v0_opt.png"
 import { MdAlternateEmail } from "react-icons/md";
+import {useTranslation} from "react-i18next"
 
 function Hero() {
+  const [t]= useTranslation("global");
+
   return (
     <section className="hero_section">
       <div className="container hero_data">
         <div className="container_data">
-          <h1 className="hero_title">Hola, mi nombre es</h1>
-          <h2 className="hero_name">Miguel Elías</h2>
+          <h1 className="hero_title">{t("section_hero.title_1")}</h1>
+          <h2 className="hero_name">{t("section_hero.title_2")}</h2>
           <h3 className="hero_subtitle">
-            Construyo sitios web y aplicaciones increibles
+          {t("section_hero.title_3")}
           </h3>
           <p className="hero_description">
-              Soy un desarrollador web front-end y Licenciado en Tecnologías de la Información, comprometido por diseñar experiencias digitales excepcionales y materializar ideas creativas en entornos web.
+          {t("section_hero.final_paragraph")}
           </p>
         </div>
         <div className="container_foto">
@@ -31,8 +34,8 @@ function Hero() {
           </div>
         </div>
         <div className="hero_links">
-            <a href="#about" className='btn_primary'>Conoce más</a>
-            <a href="#about" className='btn_primary goToCV'>Descarga mi CV</a>
+            <a href="#about" className='btn_primary'>{t("section_hero.btnPrimary")}</a>
+            <a href="#about" className='btn_primary goToCV'>{t("section_hero.btn_cv")}</a>
           <div className="social_links">
             <SocialLink link={"https://github.com/MiguelKoh"} arialabel={"Github"} icon={<FiGithub/>}/>
             <SocialLink link={"https://www.linkedin.com/"} arialabel={"Linkedin"} icon={<SlSocialLinkedin/>}/>

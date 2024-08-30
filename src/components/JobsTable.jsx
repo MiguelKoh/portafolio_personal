@@ -6,10 +6,7 @@ function JobsTable({jobs}) {
 //  console.log(jobs)
   const [trabajo, setTrabajo] = useState(0)
 
-  
  
-
-
   return (
     <div className="jobs_table">
             <div className="workplaces">

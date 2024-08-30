@@ -1,0 +1,104 @@
+{
+  "section_header": {
+      "about": "About Me",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact",
+      "english":"English",
+      "spanish":"Spanish"
+  },
+  "section_hero": {
+      "title_1": "Hello, my name is",
+      "title_2": "Miguel Elías",
+      "title_3": "I build amazing websites and applications",
+      "final_paragraph": "I am a front-end web developer and Bachelor in Information Technologies, committed to designing exceptional digital experiences and bringing creative ideas to life in web environments.",
+      "btnPrimary": "Learn more",
+      "btn_cv": "Download my CV"
+  },
+  "section_about": {
+      "title": "About Me",
+      "paragraph_1": "Hello, my name is Miguel, I am a front-end developer, however, I also have some knowledge in back-end.",
+      "paragraph_2": "I decided to focus more on front-end because it allows me to work on what I enjoy the most: the user interface. I like to create something visual that comes to life.",
+      "paragraph_3": "I studied a Bachelor's degree in Information Technologies. During that time, I was not yet clear about my professional path, but after taking some web development classes, I discovered my interest in that area.",
+      "paragraph_4": "I am constantly learning new topics and practicing what I already know. Whenever I work on my projects, I try to apply best practices in the code and maintain the highest possible performance of the website or web application.",
+      "paragraph_5": "These are some of the technologies I have worked with:"
+  },
+  "section_experience":"Experience",
+  "jobs": [
+      {
+          "id": 0,
+          "establecimiento": "Zebra High Performance",
+          "puesto": "Web Developer",
+          "periodo": "November 2021 - June 2023",
+          "urlEmpresa": "https://mercadotecnia-digital.com/",
+          "actividades": [
+              "I worked on the development and maintenance of e-commerce platforms like Shopify and WordPress",
+              "I redesigned and optimized clients' websites",
+              "I provided technical support to clients",
+              "Development of modules for the company's administrative system"
+          ]
+      },
+      {
+          "id": 1,
+          "establecimiento": "Preparatoria Dos UADY",
+          "puesto": "Web Developer",
+          "periodo": "June 2023 - June 2024",
+          "urlEmpresa": "https://www.prepa2.uady.mx/",
+          "actividades": [
+              "Design and programming of a virtual store for buying and selling school uniforms",
+              "Development and maintenance of modules for the Academic Load System (SISCAP)",
+              "Maintenance and improvements of modules for the Attendance Control System (time clock)"
+          ]
+      }
+  ],
+  "section_projects": {
+      "title": "Projects",
+      "project_santamar": {
+          "title": "Landing Page - Santamar",
+          "description": "It is a landing page that I previously developed in Wordpress for a real estate company but decided to replicate in React"
+      },
+      "project_app_gastos": {
+          "title": "Personal Expense Application",
+          "description": "It is an application to manage personal expenses, the application allows you to record each expense, the category, description, cost, and date. When registering the expense, it is possible to access a list with each registered expense and also a list of expenses by category. The application uses Firebase for the backend and React for the front-end, and it includes user authentication."
+      },
+      "project_prepa": {
+          "title": "Virtual Store - Preparatoria Dos UADY",
+          "description": "It is a virtual store for selling school uniforms that I developed during my stay at Preparatoria Dos"
+      }
+  },
+  "section_contact": {
+      "title": "Contact",
+      "paragraph": "I am excited about the possibility of new job opportunities. You can contact me through the following form or reach out to me on my social networks below. I hope we can collaborate soon!",
+      "linkedIn": "LinkedIn Profile",
+      "email": "Email"
+  },
+  "form": {
+      "field_name": {
+          "min": "The name must be at least 3 characters long",
+          "max": "The name must be at most 70 characters long",
+          "placeholder": "Name",
+          "required": "Please enter the name"
+      },
+      "field_email": {
+          "InvalidFormat": "Please enter a valid email format",
+          "placeholder": "Email",
+          "required": "Please enter the email"
+      },
+      "field_subject": {
+          "required": "Please enter the subject",
+          "min": "The subject must be at least 3 characters long",
+          "max": "The subject must be at most 300 characters long",
+          "placeholder": "Subject"
+      },
+      "field_message": {
+          "required": "Please enter the message",
+          "min": "The message must be at least 3 characters long",
+          "placeholder": "Message"
+      },
+      "btn_form": "Send message",
+      "success": "Message sent successfully"
+  },
+  
+  "footer":"Made by Miguel Koh Avila"
+
+}

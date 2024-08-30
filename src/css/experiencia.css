@@ -114,7 +114,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-    width: 1.5px;
+    width: 2px;
     height:3rem;
     border-radius:4px;
     background: var(--green);

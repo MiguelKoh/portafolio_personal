@@ -1,9 +1,12 @@
 import '../css/footer.css'
+import {useTranslation} from "react-i18next"
 
 function Footer() {
+  const [t]= useTranslation("global");
+
   return (
     <footer className='container_footer'>
-        <p>Hecho por Miguel Koh Avila</p>
+        <p>{t("footer")}</p>
     </footer>
   )
 }

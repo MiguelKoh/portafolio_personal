@@ -5,8 +5,12 @@ import appGastos from '../assets/images/captura_app_gastos_opt.png'
 import tiendaVirtual from '../assets/images/tienda-virtual_opt.jpg'
 import TechName from "./TechName";
 import { useEffect } from 'react'
+import {useTranslation} from "react-i18next"
+
 
 function Projects() {
+ 
+  const [t]= useTranslation("global");
 
   useEffect(() => {
 
@@ -42,14 +46,14 @@ function Projects() {
   return (
     <section className="section_projects nav_section" id="projects">
         <div className='container'>
-            <h2 className='section_title' data-number="3">Proyectos</h2>
+            <h2 className='section_title' data-number="3">{t("section_projects.title")}</h2>
             <div className='container_grid_projects'>
             <CardProject
                 extlink="https://miguelkoh.github.io/landing-portafolio/"
                 imgsrc={landing}
                 repolink="https://github.com/MiguelKoh/landing-portafolio"
-                name="Landing Page - Santamar"
-                description={"Es una landing page que desarrolle previamente en Wordpress para una inmobiliaria  pero decidi replicar en React"}
+                name={t("section_projects.project_santamar.title")}
+                description={t("section_projects.project_santamar.description")}
                 techname={
                   <>
                     <TechName name="React" />
@@ -57,7 +61,7 @@ function Projects() {
                     <TechName name="React-router" />
                     <TechName name="Swiper" />
                     <TechName name="React Hook Form" />
-                    <TechName name="Yup" />
+                    <TechName name="i18next" />
                   </>
             }
           />
@@ -65,8 +69,8 @@ function Projects() {
                 extlink="https://app-lista-gastos-d3526.web.app/iniciar-sesion"
                 imgsrc={appGastos}
                 repolink="https://github.com/MiguelKoh/app_lista_gastos"
-                name="Aplicación  de gastos personales"
-                description={"Es una aplicación para administrar los gastos personales, la aplicación permite registrar por cada gasto, la categoría, descripción, costo y fecha. Al registrar el gasto es posible acceder a una lista con cada gasto registrado y también a una lista de gastos por categoría. La aplicación utiliza Firebase para el backend y React para el front-end, además incluye autenticación de usuarios. "}
+                name={t("section_projects.project_app_gastos.title")}
+                description={t("section_projects.project_app_gastos.description")}
                 techname={
                   <>
                     <TechName name="React" />
@@ -82,14 +86,15 @@ function Projects() {
                 extlink="https://siscap.uady.mx/siscap/tienda-virtual/escolares.php"
                 imgsrc={tiendaVirtual}
                 repolink="https://github.com/MiguelKoh/tiendaVirtual"
-                name="Tienda virtual - Preparatoria Dos UADY"
-                description={"Es una tienda virtual para la venta de uniformes escolares que desarrolle  durante mi estadia en la Preparatoria Dos"}
+                name={t("section_projects.project_prepa.title")}
+                description={t("section_projects.project_prepa.description")}
                 techname={
                   <>
                     <TechName name="PHP" />
                     <TechName name="JS" />
                     <TechName name="Bootstrap" />
                     <TechName name="Swiper" />
+                    <TechName name="Jquery"/>
                   </>
             }
           />

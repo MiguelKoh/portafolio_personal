@@ -1,0 +1,105 @@
+{
+    "section_header": {
+        "about": "Acerca de mí",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "english":"Ingles",
+        "spanish":"Español"
+    },
+    "section_hero": {
+        "title_1": "Hola, mi nombre es",
+        "title_2": "Miguel Elías",
+        "title_3": "Construyo sitios web y aplicaciones increibles",
+        "final_paragraph": "Soy un desarrollador web front-end y Licenciado en Tecnologías de la Información, comprometido por diseñar experiencias digitales excepcionales y materializar ideas creativas en entornos web.",
+        "btnPrimary": "Conoce más",
+        "btn_cv": "Descarga mi CV"
+    },
+    "section_about": {
+        "title": "Acerca de mí",
+        "paragraph_1": "Hola me llamo Miguel, soy desarrollador front-end, sin embargo, también tengo     algunos conocimientos en back-end.",
+        "paragraph_2": "Decidí enfocarme más en el front-end, porque me permite trabajar en lo que más disfruto: la interfaz de usuario. Me gusta crear algo visual que cobre vida.",
+        "paragraph_3": "Estudié la Licenciatura en Tecnologías de la Información. Durante esa etapa, aún no tenía claro cuál sería mi camino profesional, pero al tomar algunas clases de desarrollo web, descubrí mi interés por esa área.",
+        "paragraph_4": "Constantemente estoy aprendiendo nuevos temas y practicando los que ya conozco. Siempre que realizo mis proyectos trato de aplicar las mejores prácticas en el código y en mantener el mayor rendimiento posible del sitio o aplicación web",
+        "paragraph_5": "Estas son algunas de las tecnologías con las que he podido trabajar:"
+    },
+
+    "section_experience":"Experiencia",
+
+    "jobs": [
+        {
+            "id": 0,
+            "establecimiento": "Zebra High Performance",
+            "puesto": "Programador web",
+            "periodo": "Noviembre 2021 - Junio 2023",
+            "urlEmpresa": "https://mercadotecnia-digital.com/",
+            "actividades": [
+                "Trabajé en el desarrollo y mantenimiento de e-commerce en plataformas como Shopify y WordPress",
+                "Realicé rediseños y optimizaciones a los sitios web de los clientes",
+                "Proporcioné soporte técnico a los clientes",
+                "Desarrollo de módulos para el sistema administrativo de la empresa"
+            ]
+        },
+        {
+            "id": 1,
+            "establecimiento": "Preparatoria Dos UADY",
+            "puesto": "Programador web",
+            "periodo": "Junio 2023 - junio 2024",
+            "urlEmpresa": "https://www.prepa2.uady.mx/",
+            "actividades": [
+                "Diseño y programación de una tienda virtual para la compra y venta de uniformes escolares",
+                "Desarrollo y mantenimiento de módulos del Sistema de Cargas Académicas (SISCAP)",
+                "Mantenimiento y mejoras de módulos del Sistema de Control de Asistencias (reloj checador)"
+            ]
+        }
+    ],
+    "section_projects": {
+        "title": "Proyectos",
+        "project_santamar": {
+            "title": "Landing Page - Santamar",
+            "description": "Es una landing page que desarrolle previamente en Wordpress para una inmobiliaria pero decidi replicar en React"
+        },
+        "project_app_gastos": {
+            "title": "Aplicación de gastos personales",
+            "description": "Es una aplicación para administrar los gastos personales, la aplicación permite registrar por cada gasto, la categoría, descripción, costo y fecha. Al registrar el gasto es posible acceder a una lista con cada gasto registrado y también a una lista de gastos por categoría. La aplicación utiliza Firebase para el backend y React para el front-end, además incluye autenticación de usuarios."
+        },
+        "project_prepa": {
+            "title": "Tienda virtual - Preparatoria Dos UADY",
+            "description": "Es una tienda virtual para la venta de uniformes escolares que desarrolle durante mi estadia en la Preparatoria Dos"
+        }
+    },
+    "section_contact": {
+        "title": "Contacto",
+        "paragraph": "Estoy entusiasmado por la posibilidad de nuevas oportunidades de trabajo. Puedes ponerte en contacto conmigo a través del siguiente formulario o contactarme en mis redes sociales que estan más abajo. ¡Espero que podamos colaborar pronto!",
+        "linkedIn": "Perfil de LinkedIn",
+        "email": "Correo electrónico"
+    },
+    "form": {
+        "field_name": {
+            "min": "El nombre debe tener al menos 3 caracteres",
+            "max": "El nombre debe tener maximo 70 caracteres",
+            "placeholder": "Nombre",
+            "required": "Por favor, escribe el nombre"
+        },
+        "field_email": {
+            "InvalidFormat": "Por favor introduce un formato de correo válido",
+            "placeholder": "Correo",
+            "required": "Por favor, escribe el correo"
+        },
+        "field_subject": {
+            "required": "Por favor, escribe el asunto",
+            "min": "El asunto debe tener al menos 3 caracteres",
+            "max": "El asunto debe tener maximo 300 caracteres",
+            "placeholder": "Asunto"
+        },
+        "field_message": {
+            "required": "Por favor, escribe el mensaje",
+            "min": "El mensaje debe tener al menos 3 caracteres",
+            "placeholder": "Mensaje"
+        },
+        "btn_form": "Enviar mensaje",
+        "success": "Mensaje enviado correctamente"
+    },
+    
+    "footer":"Hecho por Miguel Koh Avila"
+}
