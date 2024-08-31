@@ -17,23 +17,23 @@ function Hero() {
     <section className="hero_section">
       <div className="container hero_data">
         <div className="container_data">
-          <h1 className="hero_title">{t("section_hero.title_1")}</h1>
-          <h2 className="hero_name">{t("section_hero.title_2")}</h2>
-          <h3 className="hero_subtitle">
+          <h1 className="hero_title" data-aos="fade-right" data-aos-delay="800">{t("section_hero.title_1")}</h1>
+          <h2 className="hero_name" data-aos="fade-right" data-aos-delay="1000">Miguel Elías</h2>
+          <h3 className="hero_subtitle" data-aos="fade-right" data-aos-delay="1200">
           {t("section_hero.title_3")}
           </h3>
-          <p className="hero_description">
+          <p className="hero_description" data-aos="fade-right" data-aos-delay="1400">
           {t("section_hero.final_paragraph")}
           </p>
         </div>
         <div className="container_foto">
           <div className="container_img">
-            <img src={man} className="man" alt="man" />
-            <img src={energy} className="energy" alt="man" />
+            <img src={man} className="man" alt="man" data-aos="zoom-in-left" />
+            <img src={energy} className="energy" alt="energy"/>
             <img src={logo2} className="white_halo" alt="logo2" />
           </div>
         </div>
-        <div className="hero_links">
+        <div className="hero_links" data-aos="fade-up" data-aos-offset="50" data-aos-delay="1600">
             <a href="#about" className='btn_primary'>{t("section_hero.btnPrimary")}</a>
             <a href="#about" className='btn_primary goToCV'>{t("section_hero.btn_cv")}</a>
           <div className="social_links">
@@ -43,8 +43,8 @@ function Hero() {
             <SocialLink link={"mailto:miguelkohavila@gmail.com"} arialabel={"correo"} icon={<MdEmail/>}/> 
           </div>
         </div>
-        <div className="top_left_edges"></div>
-        <div className="bottom_right_edges"></div>
+        <div className="top_left_edges" data-aos="fade-down" data-aos-delay="1600"></div>
+        <div className="bottom_right_edges" data-aos="fade-down" data-aos-delay="1600"></div>
       </div>
     </section>
   );

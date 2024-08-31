@@ -100,7 +100,9 @@ function Header() {
 
   return (
     <header className={`header_section ${headerScroll ?"header_scrolling":""}`}>
+      
       <nav className="nav_content nav_container">
+        
         <a href="/" className="logo_link">
           <img src={logo} alt="logo" className="logo_img" />
         </a>

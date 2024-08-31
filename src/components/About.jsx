@@ -28,9 +28,9 @@ function About() {
   return (
     <section className='about_section nav_section' id='about'>
       <div className='container'>
-      <h2 className='section_title' data-number="1">{t("section_about.title")}</h2>
+      <h2 className='section_title' data-number="1" data-aos="fade-up">{t("section_about.title")}</h2>
       <div className='about'>
-        <div className='about_data'>
+        <div className='about_data' data-aos="fade-up" data-aos-delay="100">
             <p>{t("section_about.paragraph_1")}</p>
             <p>{t("section_about.paragraph_2")}</p>
             <p>{t("section_about.paragraph_3")}</p>
@@ -38,8 +38,7 @@ function About() {
             <p>{t("section_about.paragraph_5")}</p>
         </div>
         <div className='about_photo'>
-          
-          <div className="container_photo">
+          <div className="container_photo" data-aos="fade-up" data-aos-delay="100">
             <img src={foto} className="photo" loading="lazy" alt="foto-de-perfil" />
             </div>
           </div>
@@ -56,7 +55,7 @@ function About() {
                 <li>Firebase</li>
                 <li>Wordpress</li>
               </ul>
-              </div>
+        </div>
       
       <div className="container_carousel">
      

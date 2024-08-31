@@ -302,8 +302,14 @@ a[href='/'] {
     .social_links {
         margin-right: 0;
         gap: 1rem;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.5rem;
     }
+
+    .btn_primary.goToCV {
+        margin-bottom: 2rem;
+      }
+
+
 }
 
 

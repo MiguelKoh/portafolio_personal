@@ -46,7 +46,7 @@ function Projects() {
   return (
     <section className="section_projects nav_section" id="projects">
         <div className='container'>
-            <h2 className='section_title' data-number="3">{t("section_projects.title")}</h2>
+            <h2 className='section_title' data-number="3" data-aos="fade-up">{t("section_projects.title")}</h2>
             <div className='container_grid_projects'>
             <CardProject
                 extlink="https://miguelkoh.github.io/landing-portafolio/"

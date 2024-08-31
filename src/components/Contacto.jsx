@@ -10,7 +10,7 @@ import {useTranslation} from "react-i18next"
 function Contacto() {
   const [t]= useTranslation("global");
   return (
-    <section className='contact_section nav_section' id='contact'>
+    <section className='contact_section nav_section' data-aos="fade-up" data-aos-delay="250" id='contact'>
         <div className="container">
             <h2 className="section_title" data-number="4">{t("section_contact.title")}</h2>
             <p className='text_contact'>{t("section_contact.paragraph")}</p>

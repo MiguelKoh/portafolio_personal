@@ -6,8 +6,16 @@ import Experiencia from "./components/Experiencia";
 import Projects from "./components/Projects";
 import Contacto from "./components/Contacto";
 import Footer from "./components/Footer"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init({
+    duration: 800,
+    once: true,
+    easing: "ease-out"
+  });
+
   return (
     <>
       <Header />

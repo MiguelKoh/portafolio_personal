@@ -10,7 +10,7 @@ function Experiencia() {
    console.log(jobs)
   return (
     <section className="experience_section nav_section" id="experience">
-      <div className="container">
+      <div className="container" data-aos="fade-up" data-aos-delay="100" >
         <h2 className="section_title" data-number="2">{t('section_experience')}</h2>
         <div className="container_jobs">
           <JobsTable jobs={jobs}/> 
