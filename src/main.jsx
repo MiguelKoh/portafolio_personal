@@ -9,7 +9,7 @@ import global_es from './translations/es/global_es.json'
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'en', // Definir el idioma actual aquí
+  lng: 'es', // Definir el idioma actual aquí
   resources: {
     es: {
       global: global_es,

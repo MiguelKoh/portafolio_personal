@@ -35,10 +35,10 @@ function Hero() {
         </div>
         <div className="hero_links" data-aos="fade-up" data-aos-offset="50" data-aos-delay="1600">
             <a href="#about" className='btn_primary'>{t("section_hero.btnPrimary")}</a>
-            <a href="#about" className='btn_primary goToCV'>{t("section_hero.btn_cv")}</a>
+            <a href="../assets/miguel_koh_avila_cv.pdf" target='_blank' className='btn_primary goToCV'>{t("section_hero.btn_cv")}</a>
           <div className="social_links">
             <SocialLink link={"https://github.com/MiguelKoh"} arialabel={"Github"} icon={<FiGithub/>}/>
-            <SocialLink link={"https://www.linkedin.com/"} arialabel={"Linkedin"} icon={<SlSocialLinkedin/>}/>
+            <SocialLink link={"https://www.linkedin.com/in/miguel-elias-koh-avila-557972216/"} arialabel={"Linkedin"} icon={<SlSocialLinkedin/>}/>
             <SocialLink link={"https://wa.me/529994090432"} arialabel={"Whatsapp"} icon={<ImWhatsapp/>}/>
             <SocialLink link={"mailto:miguelkohavila@gmail.com"} arialabel={"correo"} icon={<MdEmail/>}/> 
           </div>
