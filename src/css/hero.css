@@ -235,10 +235,7 @@ a[href='/'] {
 }
 
 @media (max-width: 650px) {
-    .hero_data .top_left_edges {
-        display: none
-    }
-
+    
     .hero_links {
         flex-direction: column-reverse;
         justify-content: center;
