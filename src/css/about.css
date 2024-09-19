@@ -81,7 +81,7 @@
 
 .technologies {
     display: grid;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 50%;
 }
 

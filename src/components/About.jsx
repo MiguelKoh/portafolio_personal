@@ -55,6 +55,9 @@ function About() {
                 <li>Firebase</li>
                 <li>Wordpress</li>
               </ul>
+              <ul>
+                <li>Typescript</li>
+              </ul>
         </div>
       
       <div className="container_carousel">
